@@ -1,0 +1,32 @@
+@baseUrl = http://localhost:3000/api
+
+# Posts
+
+# @name getAllPosts
+GET {{baseUrl}}/posts
+
+#########
+
+# @name addNewPost
+POST {{baseUrl}}/posts
+Content-Type: application/json
+
+{
+  "title": "demo case",
+  "author": "winvu"
+}
+
+#########
+
+# @name updatePostById
+PATCH {{baseUrl}}/posts/2
+Content-Type: application/json
+
+{
+  "title": "new Demo Case"
+}
+
+#########
+
+# @name removePostById
+DELETE {{baseUrl}}/posts/2
