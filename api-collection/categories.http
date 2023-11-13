@@ -1,0 +1,31 @@
+@baseUrl = http://localhost:3000/api
+
+# categories
+
+# @name getAllCategories
+GET {{baseUrl}}/categories
+
+#########
+
+# @name addNewCategory
+POST {{baseUrl}}/categories
+Content-Type: application/json
+
+{
+  "name": "Laptop",
+}
+
+#########
+
+# @name updateCategoryById
+PATCH {{baseUrl}}/categories/2
+Content-Type: application/json
+
+{
+  "name": "new Laptop"
+}
+
+#########
+
+# @name removeCategoryById
+DELETE {{baseUrl}}/categories/2
