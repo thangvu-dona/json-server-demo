@@ -33,17 +33,24 @@ POST {{baseUrl}}/{{resouceName}}
 Content-Type: application/json
 
 {
-  "name": "Laptop",
+  "categoryId": "f67ac936-9952-4eed-8337-8f6917cfa367",
+  "name": "Unbranded Frozen Chicken 123",
+  "color": "silver",
+  "price": 456,
+  "discription": "The Nagasaki Lander is the trademarked name of several series of Nagasaki sport bikes, that started with the 1984 ABC800J",
+  "thumnailUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/580.jpg"
 }
 
 #########
 
 # @name update
-PATCH {{baseUrl}}/{{resouceName}}/2
+PATCH {{baseUrl}}/{{resouceName}}/C5wxlA0
 Content-Type: application/json
 
 {
-  "name": "new Laptop"
+  "name": "Unbranded Frozen Chicken 123 Update",
+  "color": "gold",
+  "price": 546
 }
 
 #########
