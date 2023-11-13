@@ -1,32 +1,31 @@
 @baseUrl = http://localhost:3000/api
 
-# Posts
+# categories
 
-# @name getAllPosts
-GET {{baseUrl}}/posts
+# @name getAllCategories
+GET {{baseUrl}}/categories
 
 #########
 
-# @name addNewPost
-POST {{baseUrl}}/posts
+# @name addNewCategory
+POST {{baseUrl}}/categories
 Content-Type: application/json
 
 {
-  "title": "demo case",
-  "author": "winvu"
+  "name": "Laptop",
 }
 
 #########
 
-# @name updatePostById
-PATCH {{baseUrl}}/posts/2
+# @name updateCategoryById
+PATCH {{baseUrl}}/categories/2
 Content-Type: application/json
 
 {
-  "title": "new Demo Case"
+  "name": "new Laptop"
 }
 
 #########
 
-# @name removePostById
-DELETE {{baseUrl}}/posts/2
+# @name removeCategoryById
+DELETE {{baseUrl}}/categories/2
